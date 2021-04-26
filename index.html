@@ -925,11 +925,12 @@
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- SOcial feeds js files-->
+  <!-- Social feeds js files-->
 <script src="./assets/vendor/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="./assets/vendor/bower_components/codebird-js/codebird.js"></script>
 <script src="./assets/vendor/bower_components/doT/doT.min.js"></script>
 <script src="./assets/vendor/bower_components/moment/min/moment-with-locales.min.js"></script>
+
 <!-- <script src="./assets/vendor/bower_components/moment/min/moment.min.js"></script> -->
 <script src="./assets/js/jquery.socialfeed.js"></script>
 
@@ -959,14 +960,14 @@
             },
             // Twitter
             twitter: {
-              accounts: ['#asupstrike', '#asup',],
+              accounts: ['#asupstrike',],
               limit: 2,
               consumer_key: 'qzRXgkI7enflNJH1lWFvujT2P', // make sure to have your app read-only
               consumer_secret: '8e7E7gHuTwyDHw9lGQFO73FcUwz9YozT37lEvZulMq8FXaPl8O', // make sure to have your app read-only
           },
 
             // GENERAL SETTINGS
-            length:100, //Integer: For posts with text longer than this length, show an ellipsis.
+            length:200, //Integer: For posts with text longer than this length, show an ellipsis.
             show_media: true,
             update_period: 5000,
           });
