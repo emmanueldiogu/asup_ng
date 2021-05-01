@@ -29,6 +29,15 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--secondary-color) !important;
 }
 
+a.btn-hover-primary:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bx-lg {
+  font-size: 3.0rem!important;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1428,6 +1437,36 @@ section {
 .related-preview-overlay .preview-btn a:hover {
   color: var(--primary-color);
 }
+
+/*------------------------------------------------------------
+# publications
+------------------------------------------------------------- */
+.filter-col ul li{
+  background-color: transparent;
+}
+.filter-col ul li.active {
+  background-color: #fff;
+  border-bottom: 1px solid #888686;
+}
+
+.filter-col a {
+  color: #000;
+  display: block;
+}
+
+.filter-col .active a {
+  color: var(--primary-color);
+}
+
+.filter-col ul li:hover {
+  background-color: #fff;
+}
+
+.filter-col ul li:hover a {
+  color: var(--primary-color);
+}
+
+
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
