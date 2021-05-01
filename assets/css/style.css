@@ -1196,7 +1196,6 @@ section {
   padding: 10px 15px 8px 15px;
   font-size: 16px;
   font-weight: 600;
-  line-height: 1;
   text-transform: uppercase;
   color: #444444;
   margin-bottom: 5px;
@@ -1204,7 +1203,8 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #00ac58;
+  background-color: #00ac58;
+  color: #fff;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1348,6 +1348,86 @@ section {
   padding: 0;
 }
 
+/*-------------------------------------------------------------
+#Gallery page
+---------------------------------------------------------------*/
+
+.gallery .portfolio-lightbox img:hover {
+  opacity: 80%;
+  width: 99.5% !important;
+  transition: all 0.3s ease-in;
+}
+
+.related-preview-item {
+  position: relative;
+}
+
+.related-preview-overlay {
+  position: absolute;
+  padding-top: cal(100% - 50px);
+  padding-bottom: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: calc(100% - 90px);
+  background: linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.02), rgba(0,0,0,0.7));
+  color: #fff;
+}
+
+.related-preview-overlay a {
+  color: #000;
+}
+
+.related-preview-overlay p a:hover, .related-preview-overlay h3 a:hover {
+  color: var(--primary-color);
+}
+
+.related-preview-overlay:hover {
+  background: linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+  height: 100%;
+  transition: all 1s ease;
+  padding-top: cal(100% - 100px);
+}
+
+.related-preview-overlay:hover a {
+  color: #fff;
+}
+
+
+.related-preview-item .img-count {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: .75rem;
+  z-index: 2;
+}
+
+.related-preview-item .img-count i {
+  margin-right: .2rem;
+}
+
+.related-preview-overlay .preview-btn {
+  display: none;
+}
+
+.related-preview-overlay:hover .preview-btn {
+  display: block;
+}
+
+.related-preview-overlay .preview-btn a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.related-preview-overlay .preview-btn a:hover {
+  color: var(--primary-color);
+}
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -1777,6 +1857,7 @@ section {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
+  outline: none;
 }
 
 #footer .footer-newsletter form input[type="submit"] {
