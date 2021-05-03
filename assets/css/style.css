@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--secondary-color) !important;
 }
 
+.asup-prim {
+  color: var(--primary-color) !important;
+}
+
 a.btn-hover-primary:hover {
   background-color: var(--primary-color);
   color: #fff;
@@ -515,7 +519,7 @@ a.btn-hover-primary:hover {
   font-weight: 400;
 }
 
-#hero .btn-get-started, #team .btn-get-started {
+.btn-get-started {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -529,8 +533,9 @@ a.btn-hover-primary:hover {
   background: #00ac58;
 }
 
-#hero .btn-get-started:hover, #team .btn-get-started:hover {
+.btn-get-started:hover {
   background: #00d76e;
+  color: #fff;
 }
 
 #hero .btn-watch-video {
@@ -2047,3 +2052,80 @@ section {
     padding: 2px 0;
   }
 }
+
+/* ------------------------------------------
+#search and multi-search
+---------------------------------------------- */
+
+.multi-search {
+  padding: 40px 15px;
+  margin-bottom: 1.5rem;
+  background-color: rgba(152, 221, 189, 0.37);
+}
+
+.search .form-control {
+  background-color: rgba(152, 221, 189, 0.1);
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.search .form-control:focus {
+  box-shadow: none;
+}
+
+.sidebar-event-img, .sidebar-gallery-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.sidebar-gallery-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.sidebar-event h5 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.sidebar-event-text {
+  font-size: 15px;
+}
+
+.sidebar-tag-btns a {
+  display: inline-block;
+  color: #212122;
+  padding: 7px 12px;
+  border: 1px solid rgba(28, 28, 29, 0.315);
+  margin-bottom: 7px;
+  margin-right: 7px;
+  border-radius: 3px;
+}
+
+.sidebar-tag-btns a:hover {
+  color: #f2f2f2;
+  background-color: rgba(0, 172, 89, 0.582);
+  border: none;
+}
+
+.featured-img-event-top {
+  max-height: 500px;
+}
+
+.featured-img-event-bottom .col-4 {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.wrap-date, .wrap-time, .wrap-location {
+  position: relative;
+}
+
+.wrap-date span, .wrap-time span, .wrap-location span {
+  position: absolute;
+  bottom: -15px;
+  right: 15px;
+}
+

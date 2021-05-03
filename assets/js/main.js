@@ -209,16 +209,22 @@
   });
 
   /**
-   * Social media vertical scrol slider
-   */
-  new Swiper('.swiper-container', {
-    direction: 'vertical',
-    slidesPerView: 'auto',
-    freeMode: true,
-    scrolbar: {
-      el: 'swiper-scrollbar',
+   * sidebar swiper sidebarSwiper * 
+   * 
+  */
+   new Swiper('.sidebarSwiper', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      // disableOnInteraction: false
     },
-    mousewheel: true,
+    slidesPerView: 'auto',
+    // pagination: {
+    //   el: '.swiper-pagination',
+    //   type: 'bullets',
+    //   clickable: true
+    // }
   });
 
   /**
