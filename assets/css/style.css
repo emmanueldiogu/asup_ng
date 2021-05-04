@@ -2114,7 +2114,7 @@ section {
   max-height: 500px;
 }
 
-.featured-img-event-bottom .col-4 {
+.featured-img-event-bottom .wrap-date, .featured-img-event-bottom .wrap-time, .featured-img-event-bottom .wrap-location {
   background-color: var(--primary-color);
   color: #fff;
 }
